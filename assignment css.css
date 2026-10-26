@@ -1,0 +1,1018 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #292020;
+    background: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+.top-bar {
+    background: #f7dfe2;
+    color: #4d3c3c;
+    text-align: center;
+    font-size: 11px;
+    padding: 7px 10px;
+}
+
+
+
+.header {
+    width: 100%;
+    min-height: 65px;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: white;
+}
+
+.logo {
+    font-size: 30px;
+    flex-shrink: 0;
+    color:#D97173;
+    margin-top: 10px;
+   
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex: 1;
+}
+
+.navbar a {
+    font-size: 11px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #c53868;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+
+
+
+.hero {
+    width: 100%;
+    min-height: 400px;
+    background: #f9e9e7;
+
+    display: grid;
+    grid-template-columns: 42% 58%;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    padding: 50px 10%;
+}
+
+.small-title {
+    color: #bd5470;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(35px, 4vw, 58px);
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #c33e68;
+}
+
+.hero-text {
+    font-size: 12px;
+    line-height: 1.7;
+    max-width: 380px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-radius: 2px;
+   border: thick;
+}
+
+.btn {
+    display: inline-block;
+    background: #c83d68;
+    color: white;
+    padding: 12px 22px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #a92e54;
+}
+
+.collection-btn {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.hero-image {
+    height: 100%;
+    min-height: 400px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    width: 90%;
+    margin: 18px auto;
+    background: #fff9fa;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    padding: 15px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    border-right: 1px solid #eadfe0;
+}
+
+.feature:last-child {
+    border-right: none;
+}
+
+.feature-icon {
+    color: #c63d67;
+    font-size: 22px;
+}
+
+.feature h4 {
+    font-size: 9px;
+    margin-bottom: 3px;
+}
+
+.feature p {
+    color: #777;
+    font-size: 8px;
+}
+
+
+
+
+.section {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: firebrick;
+}
+
+.section-title span {
+    color: #c83d68;
+    font-size: 12px;
+}
+
+
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.category {
+    text-align: center;
+}
+
+.category:hover{
+   transform: translateY(-10px);
+    transition: all 0.4s ease;
+} 
+
+.category img {
+    width: 140px;
+    height: 140px;
+
+    max-width: 100%;
+    margin: 0 auto 10px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.category h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.category a {
+    font-size: 10px;
+    color: #777;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.product-card {
+    min-width: 0;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    background: #f6e7e5;
+    position: relative;
+    overflow: hidden;
+}
+.product-image:hover{
+     transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sale {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    background: #c83d68;
+    color: white;
+
+    font-size: 8px;
+    padding: 4px 7px;
+
+    z-index: 2;
+}
+
+.product-card h3 {
+    font-size: 9px;
+    margin-top: 9px;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.price del {
+    color: #aaa;
+    font-size: 8px;
+    margin-left: 4px;
+}
+
+.stars {
+    color: #c83d68;
+    font-size: 8px;
+    margin-top: 4px;
+}
+
+.stars small {
+    color: #777;
+}
+
+
+/* =========================
+   OFFERS
+========================= */
+
+.offers {
+    width: 90%;
+    margin: 35px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.offer-box {
+    background: #f8e6e5;
+
+    min-height: 145px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.offer-content {
+    padding: 20px;
+    width: 55%;
+}
+
+.offer-content p {
+    color: #c83d68;
+    font-size: 8px;
+    margin-bottom: 8px;
+}
+
+.offer-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.offer-content .btn {
+    padding: 8px 13px;
+    font-size: 8px;
+}
+
+.offer-box img {
+    width: 45%;
+    height: 145px;
+    object-fit: cover;
+}
+
+
+/* =========================
+   INSTAGRAM
+========================= */
+
+.instagram {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
+
+
+.instagram-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #fff0f2;
+
+    padding: 20px 5%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-item > span {
+    color: #c83d68;
+    font-size: 22px;
+}
+
+.footer-item h4 {
+    font-size: 8px;
+    margin-bottom: 3px;
+}
+
+.footer-item p {
+    color: #777;
+    font-size: 7px;
+}
+
+
+/* =================================================
+   TABLET
+================================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 9px;
+    }
+
+    .hero {
+        grid-template-columns: 45% 55%;
+    }
+
+    .hero-content {
+        padding: 35px 7%;
+    }
+
+    .category-grid {
+        gap: 12px;
+    }
+
+    .category img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 25px;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =================================================
+   MOBILE
+================================================= */
+
+@media (max-width: 600px) {
+
+    .top-bar {
+        font-size: 8px;
+    }
+
+
+    /* Header */
+
+    .header {
+        padding: 12px 5%;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .header-icons {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .navbar {
+        order: 3;
+        width: 100%;
+
+        overflow-x: auto;
+        justify-content: flex-start;
+
+        gap: 18px;
+        padding-top: 8px;
+    }
+
+    .navbar a {
+        white-space: nowrap;
+        font-size: 9px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 40px 8%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 300px;
+        min-height: 300px;
+    }
+
+
+    /* Features */
+
+    .features {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .feature {
+        border-right: none;
+        border-bottom: 1px solid #eadfe0;
+        padding: 10px 5px;
+    }
+
+    .feature:nth-child(3),
+    .feature:nth-child(4) {
+        border-bottom: none;
+    }
+
+
+    /* Category */
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 10px;
+    }
+
+    .category:last-child {
+        grid-column: span 2;
+    }
+
+    .category img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    /* Products */
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 10px;
+    }
+
+
+    /* Offers */
+
+    .offers {
+        grid-template-columns: 1fr;
+    }
+
+    .offer-box {
+        min-height: 150px;
+    }
+
+    .offer-box img {
+        height: 150px;
+    }
+
+
+    /* Instagram */
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* Footer */
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-item {
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* =================================================
+   VERY SMALL MOBILE
+================================================= */
+
+@media (max-width: 380px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .category img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-card h3 {
+        font-size: 8px;
+    }
+
+}
+.footer {
+    background-color: #111;
+    color: white;
+
+    padding: 20px 45px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+.brand {
+    width: 20%;
+}
+
+
+.brand h2 {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+.brand small {
+    font-size: 7px;
+    letter-spacing: 3px;
+}
+
+
+.brand p {
+    font-size: 9px;
+    color: #aaa;
+    line-height: 1.5;
+}
+
+
+.social {
+    font-size: 9px;
+}
+
+
+/* Footer links */
+
+.links {
+    width: 15%;
+}
+
+
+.links h3,
+.connect h3 {
+    font-size: 9px;
+    margin-bottom: 12px;
+}
+
+
+.links p {
+    font-size: 8px;
+    color: #aaa;
+
+    margin: 7px 0;
+}
+
+
+/* Connect */
+
+.connect {
+    width: 20%;
+}
+
+
+.connect p {
+    font-size: 8px;
+    color: #aaa;
+    line-height: 1.5;
+}
+
+
+.connect input {
+    width: 140px;
+    padding: 9px;
+
+    border: none;
+}
+.subscription-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.subscription-section h1 {
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    width: 280px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    position: relative;
+    transition: 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+}
+
+.plan-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d85b78;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #777;
+    font-weight: normal;
+}
+
+.plan-card ul {
+    list-style: none;
+    text-align: left;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.plan-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #d85b78;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.plan-card button:hover {
+    background: #b83f5d;
+}
+
+
+/* Popular Plan */
+
+.popular {
+    border: 2px solid #d85b78;
+}
+
+.badge {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d85b78;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   RATING SECTION
+   ========================= */
+
+.rating-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+}
+
+.rating-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.overall-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.rating-number {
+    font-size: 55px;
+    font-weight: bold;
+    color: #d85b78;
+}
+
+.big-stars {
+    color: #f5b301;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.overall-rating p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================
+   REVIEWS
+   ========================= */
+
+.reviews-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.demo-note {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.review-card h3 {
+    margin-bottom: 8px;
+}
+
+.stars {
+    color: #f5b301;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.review-card h4 {
+    margin-bottom: 8px;
+}
+
+.review-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.verified {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 11px;
+    color: #888;
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .subscription-section h1 {
+        font-size: 28px;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .overall-rating {
+        flex-direction: column;
+    }
+
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
